@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#333">
+    HarmonAIze Data Flow: Unified Health &amp; Climate Integration
+  </text>
+
+  <text x="700" y="75" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#666" font-style="italic">
+    One Flexible Model for All Your Data
+  </text>
+
+  <!-- ========================================= -->
+  <!-- TOP SECTION: DATA SOURCES -->
+  <!-- ========================================= -->
+
+  <!-- LEFT SIDE: Health Studies (Blue Theme) -->
+  <g id="health-sources">
+    <text x="350" y="125" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#2E5C8A">
+      Health Studies
+    </text>
+
+    <!-- Study A -->
+    <g id="study-a">
+      <rect x="50" y="145" width="150" height="90" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+      <circle cx="125" cy="170" r="12" fill="#1976D2"/>
+      <path d="M 125 168 L 125 175 M 118 175 L 132 175 M 120 180 L 125 185 M 130 180 L 125 185 M 125 185 L 125 195" stroke="#FFF" stroke-width="2" fill="none"/>
+      <text x="125" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1976D2">Study A</text>
+      <text x="125" y="228" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">Hospital Admissions</text>
+    </g>
+
+    <!-- Study B -->
+    <g id="study-b">
+      <rect x="225" y="145" width="150" height="90" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+      <circle cx="300" cy="170" r="12" fill="#1976D2"/>
+      <path d="M 300 168 L 300 175 M 293 175 L 307 175 M 295 180 L 300 185 M 305 180 L 300 185 M 300 185 L 300 195" stroke="#FFF" stroke-width="2" fill="none"/>
+      <text x="300" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1976D2">Study B</text>
+      <text x="300" y="228" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">Patient Demographics</text>
+    </g>
+
+    <!-- Study C -->
+    <g id="study-c">
+      <rect x="400" y="145" width="150" height="90" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+      <circle cx="475" cy="170" r="12" fill="#1976D2"/>
+      <path d="M 475 168 L 475 175 M 468 175 L 482 175 M 470 180 L 475 185 M 480 180 L 475 185 M 475 185 L 475 195" stroke="#FFF" stroke-width="2" fill="none"/>
+      <text x="475" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1976D2">Study C</text>
+      <text x="475" y="228" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">Lab Results</text>
+    </g>
+
+    <!-- Health Variables Box -->
+    <rect x="175" y="265" width="250" height="55" rx="8" fill="#1976D2" stroke="#0D47A1" stroke-width="2"/>
+    <text x="300" y="288" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFF">Health Variables</text>
+    <text x="300" y="308" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E3F2FD">Blood pressure, Temperature, Heart rate...</text>
+
+    <!-- Arrow down from Health Variables -->
+    <path d="M 300 320 L 300 370" stroke="#1976D2" stroke-width="3" fill="none" marker-end="url(#arrowhead-blue)"/>
+  </g>
+
+  <!-- RIGHT SIDE: Climate Sources (Green Theme) -->
+  <g id="climate-sources">
+    <text x="1050" y="125" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#2E7D32">
+      Climate Data Sources
+    </text>
+
+    <!-- MODIS Satellite -->
+    <g id="satellite-modis">
+      <rect x="750" y="145" width="150" height="90" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+      <ellipse cx="825" cy="175" rx="20" ry="8" fill="#388E3C"/>
+      <rect x="820" y="175" width="10" height="15" fill="#388E3C"/>
+      <rect x="805" y="182" width="40" height="3" fill="#388E3C"/>
+      <text x="825" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#388E3C">MODIS</text>
+      <text x="825" y="228" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">Temperature</text>
+    </g>
+
+    <!-- Landsat Satellite -->
+    <g id="satellite-landsat">
+      <rect x="925" y="145" width="150" height="90" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+      <ellipse cx="1000" cy="175" rx="20" ry="8" fill="#388E3C"/>
+      <rect x="995" y="175" width="10" height="15" fill="#388E3C"/>
+      <rect x="980" y="182" width="40" height="3" fill="#388E3C"/>
+      <text x="1000" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#388E3C">Landsat</text>
+      <text x="1000" y="228" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">Vegetation Index</text>
+    </g>
+
+    <!-- ERA5 -->
+    <g id="era5">
+      <rect x="1100" y="145" width="150" height="90" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+      <ellipse cx="1175" cy="175" rx="20" ry="8" fill="#388E3C"/>
+      <rect x="1170" y="175" width="10" height="15" fill="#388E3C"/>
+      <rect x="1155" y="182" width="40" height="3" fill="#388E3C"/>
+      <text x="1175" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#388E3C">ERA5</text>
+      <text x="1175" y="228" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#555">Precipitation</text>
+    </g>
+
+    <!-- Climate Variables Box -->
+    <rect x="875" y="265" width="300" height="55" rx="8" fill="#388E3C" stroke="#1B5E20" stroke-width="2"/>
+    <text x="1025" y="288" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFF">Climate Variables</text>
+    <text x="1025" y="308" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E8F5E9">Temperature, Rainfall, NDVI, Humidity...</text>
+
+    <!-- Arrow down from Climate Variables -->
+    <path d="M 1025 320 L 1025 370" stroke="#388E3C" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)"/>
+  </g>
+
+  <!-- ========================================= -->
+  <!-- MIDDLE SECTION: HarmonAIze Integration -->
+  <!-- ========================================= -->
+
+  <g id="integration-layer">
+    <!-- Background gradient box -->
+    <defs>
+      <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#7B1FA2;stop-opacity:0.15"/>
+        <stop offset="50%" style="stop-color:#9C27B0;stop-opacity:0.2"/>
+        <stop offset="100%" style="stop-color:#7B1FA2;stop-opacity:0.15"/>
+      </linearGradient>
+    </defs>
+
+    <rect x="100" y="370" width="1200" height="280" rx="12" fill="url(#purpleGradient)" stroke="#7B1FA2" stroke-width="3"/>
+
+    <text x="700" y="405" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#6A1B9A">
+      HarmonAIze Integration Layer
+    </text>
+
+    <text x="700" y="430" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7B1FA2" font-style="italic">
+      Entity-Attribute-Value (EAV) Model
+    </text>
+
+    <!-- Central Observation Table -->
+    <g id="observation-core">
+      <rect x="550" y="460" width="300" height="160" rx="8" fill="#FFF" stroke="#7B1FA2" stroke-width="3"/>
+      <rect x="550" y="460" width="300" height="40" rx="8" fill="#9C27B0"/>
+      <text x="700" y="485" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#FFF">Observation Table</text>
+
+      <!-- Table content -->
+      <text x="570" y="520" font-family="Courier New, monospace" font-size="13" fill="#333" font-weight="bold">Unified Structure:</text>
+      <text x="570" y="545" font-family="Courier New, monospace" font-size="12" fill="#555">• Entity (Patient OR Location)</text>
+      <text x="570" y="565" font-family="Courier New, monospace" font-size="12" fill="#555">• Attribute (Variable Metadata)</text>
+      <text x="570" y="585" font-family="Courier New, monospace" font-size="12" fill="#555">• Value (Measurement)</text>
+      <text x="570" y="605" font-family="Courier New, monospace" font-size="12" fill="#555">• Time (Timestamp/Date Range)</text>
+    </g>
+
+    <!-- Left: Entity Component -->
+    <g id="entity-component">
+      <rect x="160" y="490" width="150" height="100" rx="8" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2"/>
+      <text x="235" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6A1B9A">Entity</text>
+      <text x="235" y="540" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4A148C">Patient</text>
+      <text x="235" y="560" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#7B1FA2">OR</text>
+      <text x="235" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4A148C">Location</text>
+
+      <!-- Arrow to Observation -->
+      <path d="M 310 540 L 545 510" stroke="#7B1FA2" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+    </g>
+
+    <!-- Top: Attribute Component -->
+    <g id="attribute-component">
+      <rect x="625" y="350" width="150" height="80" rx="8" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2"/>
+      <text x="700" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6A1B9A">Attribute</text>
+      <text x="700" y="395" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4A148C">Variable</text>
+      <text x="700" y="410" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4A148C">Metadata</text>
+      <text x="700" y="423" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#666">(Health or Climate)</text>
+    </g>
+
+    <!-- Right: Value Component -->
+    <g id="value-component">
+      <rect x="1090" y="490" width="150" height="100" rx="8" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2"/>
+      <text x="1165" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6A1B9A">Value</text>
+      <text x="1165" y="540" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4A148C">Measurement</text>
+      <text x="1165" y="560" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#666">35.2°C</text>
+      <text x="1165" y="578" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#666">140/90 mmHg</text>
+
+      <!-- Arrow to Observation -->
+      <path d="M 1090 540 L 855 510" stroke="#7B1FA2" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+    </g>
+
+    <!-- Bottom: Time Component -->
+    <g id="time-component">
+      <rect x="390" y="490" width="150" height="100" rx="8" fill="#E1BEE7" stroke="#7B1FA2" stroke-width="2"/>
+      <text x="465" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6A1B9A">Time</text>
+      <text x="465" y="540" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4A148C">Timestamp</text>
+      <text x="465" y="558" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#666">2024-07-15</text>
+      <text x="465" y="573" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#4A148C">Date Range</text>
+
+      <!-- Arrow to Observation -->
+      <path d="M 540 530 L 545 530" stroke="#7B1FA2" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+    </g>
+
+    <!-- Feature Tags -->
+    <g id="feature-tags">
+      <rect x="180" y="615" width="160" height="25" rx="12" fill="#6A1B9A" stroke="#4A148C" stroke-width="1"/>
+      <text x="260" y="632" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#FFF">Privacy-Preserving</text>
+
+      <rect x="360" y="615" width="140" height="25" rx="12" fill="#6A1B9A" stroke="#4A148C" stroke-width="1"/>
+      <text x="430" y="632" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#FFF">Flexible Schema</text>
+
+      <rect x="520" y="615" width="120" height="25" rx="12" fill="#6A1B9A" stroke="#4A148C" stroke-width="1"/>
+      <text x="580" y="632" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#FFF">Time-Indexed</text>
+    </g>
+  </g>
+
+  <!-- ========================================= -->
+  <!-- BOTTOM SECTION: Unified Output -->
+  <!-- ========================================= -->
+
+  <g id="unified-output">
+    <!-- Arrow down from integration layer -->
+    <path d="M 700 650 L 700 700" stroke="#7B1FA2" stroke-width="4" fill="none" marker-end="url(#arrowhead-purple-large)"/>
+
+    <text x="700" y="735" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#6A1B9A">
+      Unified Harmonized Dataset
+    </text>
+
+    <!-- Database Icon -->
+    <g id="database-icon">
+      <ellipse cx="200" cy="800" rx="40" ry="15" fill="#9C27B0" stroke="#6A1B9A" stroke-width="2"/>
+      <rect x="160" y="800" width="80" height="50" fill="#9C27B0" stroke="none"/>
+      <ellipse cx="200" cy="850" rx="40" ry="15" fill="#7B1FA2" stroke="#6A1B9A" stroke-width="2"/>
+      <path d="M 160 800 L 160 850" stroke="#6A1B9A" stroke-width="2"/>
+      <path d="M 240 800 L 240 850" stroke="#6A1B9A" stroke-width="2"/>
+      <ellipse cx="200" cy="815" rx="40" ry="15" fill="none" stroke="#E1BEE7" stroke-width="1.5"/>
+      <ellipse cx="200" cy="830" rx="40" ry="15" fill="none" stroke="#E1BEE7" stroke-width="1.5"/>
+    </g>
+
+    <!-- Sample Data Table -->
+    <g id="sample-table">
+      <rect x="280" y="760" width="1040" height="130" rx="8" fill="#FFF" stroke="#9C27B0" stroke-width="3"/>
+
+      <!-- Header row -->
+      <rect x="280" y="760" width="1040" height="35" rx="8" fill="#9C27B0"/>
+      <text x="290" y="782" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFF">Patient_ID</text>
+      <text x="450" y="782" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFF">Location</text>
+      <text x="640" y="782" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFF">Timestamp</text>
+      <text x="850" y="782" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFF">Attribute</text>
+      <text x="1080" y="782" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFF">Value</text>
+
+      <!-- Data row 1 - Climate -->
+      <rect x="280" y="795" width="1040" height="30" fill="#E8F5E9"/>
+      <text x="290" y="815" font-family="Courier New, monospace" font-size="12" fill="#333">P_10234</text>
+      <text x="450" y="815" font-family="Courier New, monospace" font-size="12" fill="#333">Lat: 40.7°N, Lon: 74.0°W</text>
+      <text x="640" y="815" font-family="Courier New, monospace" font-size="12" fill="#333">2024-07-15 14:00</text>
+      <text x="850" y="815" font-family="Courier New, monospace" font-size="12" fill="#388E3C" font-weight="bold">Max_Temp</text>
+      <text x="1080" y="815" font-family="Courier New, monospace" font-size="12" fill="#333">35.2°C</text>
+
+      <!-- Data row 2 - Health -->
+      <rect x="280" y="825" width="1040" height="30" fill="#E3F2FD"/>
+      <text x="290" y="845" font-family="Courier New, monospace" font-size="12" fill="#333">P_10234</text>
+      <text x="450" y="845" font-family="Courier New, monospace" font-size="12" fill="#333">Lat: 40.7°N, Lon: 74.0°W</text>
+      <text x="640" y="845" font-family="Courier New, monospace" font-size="12" fill="#333">2024-07-15 14:30</text>
+      <text x="850" y="845" font-family="Courier New, monospace" font-size="12" fill="#1976D2" font-weight="bold">Blood_Pressure</text>
+      <text x="1080" y="845" font-family="Courier New, monospace" font-size="12" fill="#333">140/90 mmHg</text>
+
+      <!-- Data row 3 - Climate -->
+      <rect x="280" y="855" width="1040" height="35" fill="#E8F5E9"/>
+      <text x="290" y="877" font-family="Courier New, monospace" font-size="12" fill="#333">P_10234</text>
+      <text x="450" y="877" font-family="Courier New, monospace" font-size="12" fill="#333">Lat: 40.7°N, Lon: 74.0°W</text>
+      <text x="640" y="877" font-family="Courier New, monospace" font-size="12" fill="#333">2024-07-15 00:00</text>
+      <text x="850" y="877" font-family="Courier New, monospace" font-size="12" fill="#388E3C" font-weight="bold">NDVI</text>
+      <text x="1080" y="877" font-family="Courier New, monospace" font-size="12" fill="#333">0.65</text>
+    </g>
+
+    <!-- Callout showing integration -->
+    <g id="integration-callout">
+      <path d="M 1100 820 L 1180 820 L 1180 860 L 1170 870 L 1100 870 Z" fill="#FFF9E6" stroke="#F57C00" stroke-width="2"/>
+      <text x="1110" y="837" font-family="Arial, sans-serif" font-size="11" fill="#E65100" font-weight="bold">Same Patient</text>
+      <text x="1110" y="852" font-family="Arial, sans-serif" font-size="11" fill="#E65100" font-weight="bold">Same Time</text>
+      <text x="1110" y="866" font-family="Arial, sans-serif" font-size="10" fill="#F57C00">Linked for Analysis!</text>
+    </g>
+  </g>
+
+  <!-- ========================================= -->
+  <!-- ARROW MARKERS -->
+  <!-- ========================================= -->
+
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1976D2"/>
+    </marker>
+
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#388E3C"/>
+    </marker>
+
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7B1FA2"/>
+    </marker>
+
+    <marker id="arrowhead-purple-large" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#7B1FA2"/>
+    </marker>
+  </defs>
+</svg>

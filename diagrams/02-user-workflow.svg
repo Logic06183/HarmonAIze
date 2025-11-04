@@ -1,0 +1,432 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" style="background-color: #fafbfc;">
+  <defs>
+    <!-- Gradients for phase backgrounds -->
+    <linearGradient id="bluePhase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="greenPhase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8F5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8E6C9;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="tealPhase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E0F2F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B2DFDB;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Card shadow -->
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#607D8B" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="40" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="28" font-weight="700" fill="#1a1a1a" text-anchor="middle">
+    HarmonAIze Researcher Workflow
+  </text>
+  <text x="600" y="70" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="16" fill="#666" text-anchor="middle">
+    From data upload to climate-health insights in 10 guided steps
+  </text>
+
+  <!-- ============================================ -->
+  <!-- PHASE 1: SETUP -->
+  <!-- ============================================ -->
+  <g id="phase1-setup">
+    <!-- Phase header -->
+    <rect x="50" y="110" width="1100" height="50" rx="8" fill="url(#bluePhase)" stroke="#2196F3" stroke-width="2"/>
+    <text x="70" y="142" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1565C0">
+      Phase 1: Setup
+    </text>
+
+    <!-- Step 1: Create Project -->
+    <g id="step1">
+      <rect x="100" y="190" width="450" height="120" rx="8" fill="#fff" stroke="#2196F3" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="140" cy="230" r="24" fill="#2196F3"/>
+      <text x="140" y="238" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+
+      <!-- Folder icon -->
+      <path d="M 190 215 L 190 210 C 190 207 192 205 195 205 L 215 205 L 220 210 L 250 210 C 253 210 255 212 255 215 L 255 245 C 255 248 253 250 250 250 L 195 250 C 192 250 190 248 190 245 Z" fill="#2196F3" opacity="0.8"/>
+      <path d="M 190 215 L 255 215 L 255 245 C 255 248 253 250 250 250 L 195 250 C 192 250 190 248 190 245 Z" fill="#1976D2"/>
+
+      <text x="190" y="225" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Create Project
+      </text>
+      <text x="190" y="248" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Organize your research initiative
+      </text>
+      <text x="190" y="268" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" fill="#777" font-style="italic">
+        Set project name, description, and team
+      </text>
+    </g>
+
+    <!-- Step 2: Add Studies -->
+    <g id="step2">
+      <rect x="650" y="190" width="450" height="120" rx="8" fill="#fff" stroke="#2196F3" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="690" cy="230" r="24" fill="#2196F3"/>
+      <text x="690" y="238" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+
+      <!-- Upload icon -->
+      <g transform="translate(740, 210)">
+        <rect x="0" y="25" width="30" height="20" rx="2" fill="#2196F3" opacity="0.3"/>
+        <path d="M 5 30 L 15 15 L 25 30" stroke="#2196F3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="15" y1="15" x2="15" y2="38" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <text x="740" y="225" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Add Studies
+      </text>
+      <text x="740" y="248" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Upload health study data
+      </text>
+      <text x="740" y="268" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" fill="#777" font-style="italic">
+        CSV, Excel, SPSS, Stata formats supported
+      </text>
+    </g>
+
+    <!-- Arrow between steps -->
+    <line x1="550" y1="250" x2="650" y2="250" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Main flow arrow -->
+  <line x1="600" y1="310" x2="600" y2="350" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- ============================================ -->
+  <!-- PHASE 2: HEALTH DATA HARMONIZATION -->
+  <!-- ============================================ -->
+  <g id="phase2-harmonization">
+    <!-- Phase header -->
+    <rect x="50" y="360" width="1100" height="50" rx="8" fill="url(#greenPhase)" stroke="#4CAF50" stroke-width="2"/>
+    <text x="70" y="392" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#2E7D32">
+      Phase 2: Health Data Harmonization
+    </text>
+    <rect x="400" y="375" width="110" height="22" rx="11" fill="#FF9800" opacity="0.9"/>
+    <text x="455" y="391" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">
+      AI-POWERED
+    </text>
+
+    <!-- Step 3: Upload Codebooks -->
+    <g id="step3">
+      <rect x="100" y="440" width="300" height="140" rx="8" fill="#fff" stroke="#4CAF50" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="140" cy="485" r="24" fill="#4CAF50"/>
+      <text x="140" y="493" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+
+      <!-- Document icon -->
+      <g transform="translate(190, 465)">
+        <rect x="0" y="0" width="25" height="35" rx="2" fill="#4CAF50" opacity="0.3"/>
+        <line x1="5" y1="8" x2="20" y2="8" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="15" x2="20" y2="15" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+        <line x1="5" y1="22" x2="15" y2="22" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+      </g>
+
+      <text x="190" y="485" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Upload Codebooks
+      </text>
+      <text x="190" y="508" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        HarmonAIze extracts
+      </text>
+      <text x="190" y="528" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        variables automatically
+      </text>
+      <text x="190" y="550" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" fill="#777" font-style="italic">
+        PDF, Word, or structured files
+      </text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="400" y1="510" x2="450" y2="510" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 4: AI-Assisted Mapping -->
+    <g id="step4">
+      <rect x="450" y="440" width="300" height="140" rx="8" fill="#fff" stroke="#4CAF50" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="490" cy="485" r="24" fill="#4CAF50"/>
+      <text x="490" y="493" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+
+      <!-- AI brain/network icon -->
+      <g transform="translate(540, 465)">
+        <circle cx="12" cy="12" r="3" fill="#4CAF50"/>
+        <circle cx="25" cy="8" r="3" fill="#4CAF50"/>
+        <circle cx="25" cy="22" r="3" fill="#4CAF50"/>
+        <circle cx="12" cy="27" r="3" fill="#4CAF50"/>
+        <line x1="14" y1="13" x2="23" y2="9" stroke="#4CAF50" stroke-width="1.5"/>
+        <line x1="14" y1="14" x2="23" y2="21" stroke="#4CAF50" stroke-width="1.5"/>
+        <line x1="12" y1="15" x2="12" y2="24" stroke="#4CAF50" stroke-width="1.5"/>
+      </g>
+
+      <text x="540" y="485" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        AI-Assisted Mapping
+      </text>
+      <text x="540" y="508" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Smart algorithms suggest
+      </text>
+      <text x="540" y="528" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        variable mappings
+      </text>
+      <text x="540" y="550" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" fill="#777" font-style="italic">
+        Learns from previous projects
+      </text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="750" y1="510" x2="800" y2="510" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 5: Review & Approve -->
+    <g id="step5">
+      <rect x="800" y="440" width="300" height="140" rx="8" fill="#fff" stroke="#4CAF50" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="840" cy="485" r="24" fill="#4CAF50"/>
+      <text x="840" y="493" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+
+      <!-- Checkmark icon -->
+      <g transform="translate(890, 465)">
+        <circle cx="15" cy="15" r="15" fill="#4CAF50" opacity="0.3"/>
+        <path d="M 8 15 L 13 20 L 22 10" stroke="#4CAF50" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <text x="890" y="485" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Review & Approve
+      </text>
+      <text x="890" y="508" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Researcher validates
+      </text>
+      <text x="890" y="528" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        mappings
+      </text>
+      <text x="890" y="550" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" fill="#777" font-style="italic">
+        Expert oversight ensures accuracy
+      </text>
+    </g>
+  </g>
+
+  <!-- Main flow arrow -->
+  <line x1="600" y1="580" x2="600" y2="620" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- ============================================ -->
+  <!-- PHASE 3: CLIMATE DATA INTEGRATION -->
+  <!-- ============================================ -->
+  <g id="phase3-climate">
+    <!-- Phase header -->
+    <rect x="50" y="630" width="1100" height="50" rx="8" fill="url(#tealPhase)" stroke="#00897B" stroke-width="2"/>
+    <text x="70" y="662" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#00695C">
+      Phase 3: Climate Data Integration
+    </text>
+    <rect x="420" y="645" width="140" height="22" rx="11" fill="#2196F3" opacity="0.9"/>
+    <text x="490" y="661" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">
+      REAL SATELLITE DATA
+    </text>
+
+    <!-- Step 6: Add Locations -->
+    <g id="step6">
+      <rect x="100" y="710" width="300" height="140" rx="8" fill="#fff" stroke="#00897B" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="140" cy="755" r="24" fill="#00897B"/>
+      <text x="140" y="763" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+
+      <!-- Location pin icon -->
+      <g transform="translate(190, 735)">
+        <path d="M 15 5 C 10 5 6 9 6 14 C 6 20 15 30 15 30 C 15 30 24 20 24 14 C 24 9 20 5 15 5 Z" fill="#00897B" opacity="0.8"/>
+        <circle cx="15" cy="14" r="4" fill="#fff"/>
+      </g>
+
+      <text x="190" y="755" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Add Locations
+      </text>
+      <text x="190" y="778" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Specify study sites or
+      </text>
+      <text x="190" y="798" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        patient locations
+      </text>
+      <text x="190" y="820" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" fill="#777" font-style="italic">
+        Privacy-preserving geocoding
+      </text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="400" y1="780" x2="450" y2="780" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 7: Select Climate Variables -->
+    <g id="step7">
+      <rect x="450" y="710" width="300" height="140" rx="8" fill="#fff" stroke="#00897B" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="490" cy="755" r="24" fill="#00897B"/>
+      <text x="490" y="763" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+
+      <!-- List/menu icon -->
+      <g transform="translate(540, 735)">
+        <rect x="0" y="0" width="30" height="35" rx="3" fill="#00897B" opacity="0.3"/>
+        <line x1="5" y1="8" x2="25" y2="8" stroke="#00897B" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="8" cy="8" r="2" fill="#00897B"/>
+        <line x1="5" y1="17" x2="25" y2="17" stroke="#00897B" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="8" cy="17" r="2" fill="#00897B"/>
+        <line x1="5" y1="26" x2="25" y2="26" stroke="#00897B" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="8" cy="26" r="2" fill="#00897B"/>
+      </g>
+
+      <text x="540" y="755" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Select Climate Variables
+      </text>
+      <text x="540" y="778" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Temperature, precipitation,
+      </text>
+      <text x="540" y="798" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        vegetation, etc.
+      </text>
+      <text x="540" y="820" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" fill="#777" font-style="italic">
+        50+ environmental variables
+      </text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="750" y1="780" x2="800" y2="780" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 8: Retrieve Satellite Data -->
+    <g id="step8">
+      <rect x="800" y="710" width="300" height="140" rx="8" fill="#fff" stroke="#00897B" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="840" cy="755" r="24" fill="#00897B"/>
+      <text x="840" y="763" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">8</text>
+
+      <!-- Satellite icon -->
+      <g transform="translate(890, 735)">
+        <rect x="10" y="12" width="12" height="8" rx="1" fill="#00897B"/>
+        <rect x="5" y="8" width="5" height="2" fill="#00897B" opacity="0.7"/>
+        <rect x="22" y="8" width="5" height="2" fill="#00897B" opacity="0.7"/>
+        <rect x="8" y="22" width="3" height="8" fill="#00897B" opacity="0.7"/>
+        <rect x="19" y="22" width="3" height="8" fill="#00897B" opacity="0.7"/>
+        <circle cx="16" cy="5" r="2" fill="#FFD700"/>
+      </g>
+
+      <text x="890" y="755" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Retrieve Satellite Data
+      </text>
+      <text x="890" y="778" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        40+ years from Google
+      </text>
+      <text x="890" y="798" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Earth Engine, MODIS, Landsat
+      </text>
+      <text x="890" y="820" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" fill="#777" font-style="italic">
+        Automated retrieval & processing
+      </text>
+    </g>
+  </g>
+
+  <!-- Main flow arrow -->
+  <line x1="600" y1="850" x2="600" y2="890" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <!-- ============================================ -->
+  <!-- PHASE 4: ANALYSIS & EXPORT -->
+  <!-- ============================================ -->
+  <g id="phase4-analysis">
+    <!-- Phase header -->
+    <rect x="50" y="900" width="1100" height="50" rx="8" fill="url(#greenPhase)" stroke="#66BB6A" stroke-width="2"/>
+    <text x="70" y="932" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#2E7D32">
+      Phase 4: Analysis & Export
+    </text>
+
+    <!-- Step 9: Harmonized Dataset -->
+    <g id="step9">
+      <rect x="200" y="980" width="350" height="140" rx="8" fill="#fff" stroke="#66BB6A" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="240" cy="1025" r="24" fill="#66BB6A"/>
+      <text x="240" y="1033" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">9</text>
+
+      <!-- Database/table icon -->
+      <g transform="translate(290, 1005)">
+        <rect x="0" y="0" width="35" height="30" rx="2" fill="#66BB6A" opacity="0.3"/>
+        <line x1="0" y1="10" x2="35" y2="10" stroke="#66BB6A" stroke-width="2"/>
+        <line x1="0" y1="20" x2="35" y2="20" stroke="#66BB6A" stroke-width="2"/>
+        <line x1="12" y1="0" x2="12" y2="30" stroke="#66BB6A" stroke-width="2"/>
+        <line x1="23" y1="0" x2="23" y2="30" stroke="#66BB6A" stroke-width="2"/>
+      </g>
+
+      <text x="290" y="1025" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Harmonized Dataset
+      </text>
+      <text x="290" y="1048" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Ready for statistical analysis
+      </text>
+      <text x="290" y="1075" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" fill="#777" font-style="italic">
+        Export to R, Python, Stata, SPSS
+      </text>
+      <text x="290" y="1095" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" fill="#777" font-style="italic">
+        Combined health + climate variables
+      </text>
+    </g>
+
+    <!-- Arrow -->
+    <line x1="550" y1="1050" x2="650" y2="1050" stroke="#607D8B" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 10: Climate-Health Insights -->
+    <g id="step10">
+      <rect x="650" y="980" width="350" height="140" rx="8" fill="#fff" stroke="#66BB6A" stroke-width="2" filter="url(#cardShadow)"/>
+      <circle cx="690" cy="1025" r="24" fill="#66BB6A"/>
+      <text x="690" y="1033" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">10</text>
+
+      <!-- Chart/analytics icon -->
+      <g transform="translate(740, 1005)">
+        <line x1="0" y1="30" x2="35" y2="30" stroke="#66BB6A" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="30" x2="0" y2="0" stroke="#66BB6A" stroke-width="2" stroke-linecap="round"/>
+        <polyline points="5,25 12,15 20,20 28,8 35,12" stroke="#66BB6A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="12" cy="15" r="2.5" fill="#66BB6A"/>
+        <circle cx="20" cy="20" r="2.5" fill="#66BB6A"/>
+        <circle cx="28" cy="8" r="2.5" fill="#66BB6A"/>
+      </g>
+
+      <text x="740" y="1025" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">
+        Climate-Health Insights
+      </text>
+      <text x="740" y="1048" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="14" fill="#555">
+        Link exposures to outcomes
+      </text>
+      <text x="740" y="1075" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" fill="#777" font-style="italic">
+        Discover environmental health relationships
+      </text>
+      <text x="740" y="1095" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="12" fill="#777" font-style="italic">
+        Publish findings, inform policy
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom tagline -->
+  <g id="tagline">
+    <rect x="300" y="1180" width="600" height="120" rx="12" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="2"/>
+    <text x="600" y="1220" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="16" font-weight="700" fill="#1a1a1a" text-anchor="middle">
+      Simple, Guided, Powerful
+    </text>
+    <text x="600" y="1245" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="13" fill="#555" text-anchor="middle">
+      HarmonAIze handles the complexity so you can focus on
+    </text>
+    <text x="600" y="1265" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="13" fill="#555" text-anchor="middle">
+      discovering how climate shapes health outcomes
+    </text>
+  </g>
+
+  <!-- Legend badges -->
+  <g id="legend" transform="translate(50, 1330)">
+    <rect x="0" y="0" width="95" height="24" rx="12" fill="#FF9800" opacity="0.9"/>
+    <text x="47.5" y="16" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">
+      AI-Powered
+    </text>
+
+    <rect x="110" y="0" width="130" height="24" rx="12" fill="#2196F3" opacity="0.9"/>
+    <text x="175" y="16" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">
+      Real Satellite Data
+    </text>
+
+    <rect x="255" y="0" width="135" height="24" rx="12" fill="#00897B" opacity="0.9"/>
+    <text x="322.5" y="16" font-family="Inter, -apple-system, system-ui, sans-serif" font-size="11" font-weight="600" fill="#fff" text-anchor="middle">
+      Privacy-Preserving
+    </text>
+  </g>
+</svg>
