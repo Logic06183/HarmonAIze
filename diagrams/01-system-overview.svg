@@ -1,153 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 800"
+     width="1200"
+     height="800"
+     shape-rendering="crispEdges">
   <!--
     HarmonAIze System Overview Diagram
-    Designed for promotional use
+    Designed for promotional use - VIBRANT VERSION
     Editable in Figma, Illustrator, or Inkscape
   -->
 
   <defs>
     <!-- Color Palette -->
-    <!-- Primary Blues: #0B4F6C (Deep Blue), #2E86AB (Medium Blue), #5BA4CF (Light Blue) -->
-    <!-- Secondary Greens: #2D6A4F (Forest Green), #52B788 (Medium Green), #95D5B2 (Light Green) -->
+    <!-- Primary Blues: #0B4F6C (Deep Blue), #1976D2 (Bold Blue), #2196F3 (Light Blue) -->
+    <!-- Secondary Greens: #2E7D32 (Forest Green), #388E3C (Medium Green), #4CAF50 (Light Green) -->
     <!-- Accent: #F77F00 (Orange), Neutrals: #F8F9FA (Light Gray), #495057 (Dark Gray) -->
 
-    <!-- Gradients -->
+    <!-- Gradients - ALL SOLID, NO OPACITY -->
     <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#2E86AB;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1976D2;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#0B4F6C;stop-opacity:1" />
     </linearGradient>
 
     <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#52B788;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2D6A4F;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
     </linearGradient>
 
     <linearGradient id="lightBlueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#5BA4CF;stop-opacity:0.2" />
-      <stop offset="100%" style="stop-color:#2E86AB;stop-opacity:0.1" />
+      <stop offset="0%" style="stop-color:#64B5F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:1" />
     </linearGradient>
 
-    <!-- Drop Shadow Filter -->
-    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-      <feOffset dx="0" dy="2" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.2"/>
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Glow Filter for Central Platform -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Arrow Marker -->
+    <!-- Arrow Marker - BOLDER COLOR -->
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#5BA4CF" />
+      <polygon points="0 0, 10 3, 0 6" fill="#2196F3" />
+    </marker>
+
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4CAF50" />
     </marker>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="800" fill="#FFFFFF"/>
 
-  <!-- Decorative Background Elements -->
-  <g id="background-decoration" opacity="0.05">
-    <circle cx="100" cy="100" r="150" fill="#2E86AB"/>
-    <circle cx="1100" cy="700" r="180" fill="#52B788"/>
-    <circle cx="600" cy="400" r="250" fill="#0B4F6C"/>
+  <!-- Decorative Background Elements - MUCH MORE VISIBLE -->
+  <g id="background-decoration" opacity="0.15">
+    <circle cx="100" cy="100" r="150" fill="#2196F3"/>
+    <circle cx="1100" cy="700" r="180" fill="#4CAF50"/>
+    <circle cx="600" cy="400" r="250" fill="#1976D2"/>
   </g>
 
   <!-- Title Section -->
   <g id="header">
-    <text x="600" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#0B4F6C" text-anchor="middle">
+    <text x="600" y="50" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="#0B4F6C" text-anchor="middle" text-rendering="geometricPrecision">
       HarmonAIze System Overview
     </text>
-    <text x="600" y="78" font-family="Arial, sans-serif" font-size="16" fill="#495057" text-anchor="middle">
+    <text x="600" y="78" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#495057" text-anchor="middle" text-rendering="geometricPrecision">
       Open-Source Toolkit for Climate-Health Data Integration
     </text>
   </g>
 
-  <!-- Flow Arrows (Background Layer) -->
-  <g id="data-flow-arrows" opacity="0.6">
+  <!-- Flow Arrows (Background Layer) - MORE VISIBLE -->
+  <g id="data-flow-arrows" opacity="0.8">
     <!-- Left to Center -->
-    <path d="M 280 250 L 370 300" stroke="#5BA4CF" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 280 350 L 370 360" stroke="#5BA4CF" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 280 450 L 370 420" stroke="#5BA4CF" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 280 550 L 370 480" stroke="#5BA4CF" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 280 250 L 370 300" stroke="#2196F3" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 280 350 L 370 360" stroke="#2196F3" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 280 450 L 370 420" stroke="#2196F3" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 280 550 L 370 480" stroke="#2196F3" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
 
     <!-- Center to Right -->
-    <path d="M 830 320 L 920 280" stroke="#52B788" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 830 400 L 920 380" stroke="#52B788" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
-    <path d="M 830 480 L 920 480" stroke="#52B788" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 830 320 L 920 280" stroke="#4CAF50" stroke-width="4" fill="none" marker-end="url(#arrowheadGreen)"/>
+    <path d="M 830 400 L 920 380" stroke="#4CAF50" stroke-width="4" fill="none" marker-end="url(#arrowheadGreen)"/>
+    <path d="M 830 480 L 920 480" stroke="#4CAF50" stroke-width="4" fill="none" marker-end="url(#arrowheadGreen)"/>
   </g>
 
   <!-- LEFT SECTION: Data Sources -->
   <g id="data-sources">
     <!-- Section Label -->
-    <text x="150" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4F6C" text-anchor="middle">
+    <text x="150" y="170" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#0B4F6C" text-anchor="middle" text-rendering="geometricPrecision">
       Data Sources
     </text>
 
     <!-- Health Studies Card -->
-    <g id="health-studies" filter="url(#dropShadow)">
-      <rect x="30" y="200" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#2E86AB" stroke-width="2"/>
+    <g id="health-studies">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="32" y="202" width="240" height="90" rx="8" fill="#000000" opacity="0.12"/>
+      <!-- Main card -->
+      <rect x="30" y="200" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#1976D2" stroke-width="3" shape-rendering="crispEdges"/>
       <!-- Icon: Medical Cross -->
-      <circle cx="70" cy="245" r="20" fill="#2E86AB"/>
+      <circle cx="70" cy="245" r="20" fill="#1976D2"/>
       <rect x="66" y="235" width="8" height="20" fill="white"/>
       <rect x="60" y="241" width="20" height="8" fill="white"/>
-      <text x="110" y="243" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0B4F6C">
+      <text x="110" y="243" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#0B4F6C" text-rendering="geometricPrecision">
         Multiple Health Studies
       </text>
-      <text x="110" y="263" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="110" y="263" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Patient Records • Cohort Data
       </text>
     </g>
 
     <!-- Satellite Climate Data Card -->
-    <g id="climate-data" filter="url(#dropShadow)">
-      <rect x="30" y="310" width="240" height="110" rx="8" fill="#F8F9FA" stroke="#52B788" stroke-width="2"/>
+    <g id="climate-data">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="32" y="312" width="240" height="110" rx="8" fill="#000000" opacity="0.12"/>
+      <!-- Main card -->
+      <rect x="30" y="310" width="240" height="110" rx="8" fill="#F8F9FA" stroke="#388E3C" stroke-width="3" shape-rendering="crispEdges"/>
       <!-- Icon: Satellite -->
       <g transform="translate(70, 350)">
-        <rect x="-15" y="-8" width="30" height="16" fill="#52B788" rx="2"/>
-        <rect x="-25" y="-2" width="8" height="4" fill="#52B788"/>
-        <rect x="17" y="-2" width="8" height="4" fill="#52B788"/>
-        <polygon points="0,-8 -6,-18 6,-18" fill="#52B788"/>
+        <rect x="-15" y="-8" width="30" height="16" fill="#388E3C" rx="2"/>
+        <rect x="-25" y="-2" width="8" height="4" fill="#388E3C"/>
+        <rect x="17" y="-2" width="8" height="4" fill="#388E3C"/>
+        <polygon points="0,-8 -6,-18 6,-18" fill="#388E3C"/>
       </g>
-      <text x="110" y="350" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#2D6A4F">
+      <text x="110" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#2E7D32" text-rendering="geometricPrecision">
         Satellite Climate Data
       </text>
-      <text x="110" y="370" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="110" y="370" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Google Earth Engine
       </text>
-      <text x="110" y="387" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="110" y="387" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         MODIS • Landsat • ERA5
       </text>
-      <text x="110" y="404" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#F77F00">
+      <text x="110" y="404" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#F77F00" text-rendering="geometricPrecision">
         40+ Years Coverage
       </text>
     </g>
 
     <!-- Location Data Card -->
-    <g id="location-data" filter="url(#dropShadow)">
-      <rect x="30" y="440" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#0B4F6C" stroke-width="2"/>
+    <g id="location-data">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="32" y="442" width="240" height="90" rx="8" fill="#000000" opacity="0.12"/>
+      <!-- Main card -->
+      <rect x="30" y="440" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#1976D2" stroke-width="3" shape-rendering="crispEdges"/>
       <!-- Icon: Location Pin -->
       <g transform="translate(70, 485)">
-        <path d="M 0,-15 C -8,-15 -15,-8 -15,0 C -15,8 0,18 0,18 C 0,18 15,8 15,0 C 15,-8 8,-15 0,-15 Z" fill="#0B4F6C"/>
+        <path d="M 0,-15 C -8,-15 -15,-8 -15,0 C -15,8 0,18 0,18 C 0,18 15,8 15,0 C 15,-8 8,-15 0,-15 Z" fill="#1976D2"/>
         <circle cx="0" cy="0" r="5" fill="white"/>
       </g>
-      <text x="110" y="483" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0B4F6C">
+      <text x="110" y="483" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#0B4F6C" text-rendering="geometricPrecision">
         Location Data
       </text>
-      <text x="110" y="503" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="110" y="503" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Geocoded Addresses
       </text>
     </g>
@@ -155,133 +150,129 @@
 
   <!-- CENTER SECTION: HarmonAIze Platform (Main Hub) -->
   <g id="harmonaize-platform">
-    <!-- Main Platform Container with Glow -->
-    <rect x="370" y="220" width="460" height="360" rx="12" fill="url(#blueGradient)" filter="url(#glow)" opacity="0.95"/>
+    <!-- Shadow (simple offset rect, no blur) -->
+    <rect x="374" y="224" width="460" height="360" rx="12" fill="#000000" opacity="0.15"/>
+    <!-- Main Platform Container - FULLY OPAQUE -->
+    <rect x="370" y="220" width="460" height="360" rx="12" fill="url(#blueGradient)" shape-rendering="crispEdges"/>
 
     <!-- Platform Header -->
     <g id="platform-header">
-      <!-- Logo Area (Placeholder - can be replaced with actual logo) -->
-      <circle cx="425" cy="265" r="25" fill="white" opacity="0.9"/>
-      <text x="425" y="273" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4F6C" text-anchor="middle">
+      <!-- Logo Area -->
+      <circle cx="425" cy="265" r="25" fill="white"/>
+      <text x="425" y="273" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#0B4F6C" text-anchor="middle" text-rendering="geometricPrecision">
         HA
       </text>
 
-      <text x="470" y="270" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">
+      <text x="470" y="270" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="white" text-rendering="geometricPrecision">
         HarmonAIze
       </text>
-      <text x="470" y="292" font-family="Arial, sans-serif" font-size="14" fill="#95D5B2">
+      <text x="470" y="292" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#B3E5FC" text-rendering="geometricPrecision">
         AI-Powered Climate-Health Data Platform
       </text>
     </g>
 
-    <!-- Key Features Grid -->
+    <!-- Key Features Grid - SINGLE SOLID FILLS -->
     <g id="key-features">
       <!-- Feature 1: Privacy-First -->
       <g id="feature-privacy" transform="translate(390, 320)">
-        <rect width="200" height="65" rx="6" fill="white" opacity="0.15"/>
-        <rect x="5" y="5" width="190" height="55" rx="4" fill="white" opacity="0.1"/>
+        <rect width="200" height="65" rx="6" fill="rgba(255, 255, 255, 0.25)"/>
         <!-- Shield Icon -->
         <g transform="translate(20, 25)">
-          <path d="M 0,-8 L -8,0 L 0,12 L 8,0 Z" fill="#95D5B2"/>
+          <path d="M 0,-8 L -8,0 L 0,12 L 8,0 Z" fill="#B3E5FC"/>
           <rect x="-3" y="-2" width="6" height="8" fill="#0B4F6C"/>
         </g>
-        <text x="45" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+        <text x="45" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="white" text-rendering="geometricPrecision">
           Privacy-Preserving
         </text>
-        <text x="45" y="44" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2">
+        <text x="45" y="44" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E3F2FD" text-rendering="geometricPrecision">
           Federated Architecture
         </text>
       </g>
 
       <!-- Feature 2: Multi-Study Integration -->
       <g id="feature-integration" transform="translate(610, 320)">
-        <rect width="200" height="65" rx="6" fill="white" opacity="0.15"/>
-        <rect x="5" y="5" width="190" height="55" rx="4" fill="white" opacity="0.1"/>
+        <rect width="200" height="65" rx="6" fill="rgba(255, 255, 255, 0.25)"/>
         <!-- Network Icon -->
         <g transform="translate(20, 32)">
-          <circle cx="0" cy="-6" r="3" fill="#95D5B2"/>
-          <circle cx="-6" cy="4" r="3" fill="#95D5B2"/>
-          <circle cx="6" cy="4" r="3" fill="#95D5B2"/>
-          <line x1="0" y1="-3" x2="-4" y2="2" stroke="#95D5B2" stroke-width="2"/>
-          <line x1="0" y1="-3" x2="4" y2="2" stroke="#95D5B2" stroke-width="2"/>
+          <circle cx="0" cy="-6" r="3" fill="#B3E5FC"/>
+          <circle cx="-6" cy="4" r="3" fill="#B3E5FC"/>
+          <circle cx="6" cy="4" r="3" fill="#B3E5FC"/>
+          <line x1="0" y1="-3" x2="-4" y2="2" stroke="#B3E5FC" stroke-width="2"/>
+          <line x1="0" y1="-3" x2="4" y2="2" stroke="#B3E5FC" stroke-width="2"/>
         </g>
-        <text x="45" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+        <text x="45" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="white" text-rendering="geometricPrecision">
           Multi-Study Integration
         </text>
-        <text x="45" y="44" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2">
+        <text x="45" y="44" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E3F2FD" text-rendering="geometricPrecision">
           Harmonize Across Cohorts
         </text>
       </g>
 
       <!-- Feature 3: AI-Assisted Workflows -->
       <g id="feature-ai" transform="translate(390, 400)">
-        <rect width="200" height="65" rx="6" fill="white" opacity="0.15"/>
-        <rect x="5" y="5" width="190" height="55" rx="4" fill="white" opacity="0.1"/>
+        <rect width="200" height="65" rx="6" fill="rgba(255, 255, 255, 0.25)"/>
         <!-- AI Brain Icon -->
         <g transform="translate(20, 32)">
-          <circle cx="0" cy="0" r="8" fill="none" stroke="#95D5B2" stroke-width="2"/>
-          <circle cx="-3" cy="-2" r="1.5" fill="#95D5B2"/>
-          <circle cx="3" cy="-2" r="1.5" fill="#95D5B2"/>
-          <path d="M -3,2 Q 0,4 3,2" stroke="#95D5B2" stroke-width="1.5" fill="none"/>
+          <circle cx="0" cy="0" r="8" fill="none" stroke="#B3E5FC" stroke-width="2"/>
+          <circle cx="-3" cy="-2" r="1.5" fill="#B3E5FC"/>
+          <circle cx="3" cy="-2" r="1.5" fill="#B3E5FC"/>
+          <path d="M -3,2 Q 0,4 3,2" stroke="#B3E5FC" stroke-width="1.5" fill="none"/>
         </g>
-        <text x="45" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+        <text x="45" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="white" text-rendering="geometricPrecision">
           AI-Assisted Workflows
         </text>
-        <text x="45" y="44" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2">
+        <text x="45" y="44" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E3F2FD" text-rendering="geometricPrecision">
           Smart Variable Mapping
         </text>
       </g>
 
       <!-- Feature 4: Flexible Data Model -->
       <g id="feature-flexible" transform="translate(610, 400)">
-        <rect width="200" height="65" rx="6" fill="white" opacity="0.15"/>
-        <rect x="5" y="5" width="190" height="55" rx="4" fill="white" opacity="0.1"/>
+        <rect width="200" height="65" rx="6" fill="rgba(255, 255, 255, 0.25)"/>
         <!-- Database Icon -->
         <g transform="translate(20, 32)">
-          <ellipse cx="0" cy="-5" rx="7" ry="3" fill="#95D5B2"/>
-          <rect x="-7" y="-5" width="14" height="10" fill="#95D5B2"/>
-          <ellipse cx="0" cy="5" rx="7" ry="3" fill="#A7E1D0"/>
+          <ellipse cx="0" cy="-5" rx="7" ry="3" fill="#B3E5FC"/>
+          <rect x="-7" y="-5" width="14" height="10" fill="#B3E5FC"/>
+          <ellipse cx="0" cy="5" rx="7" ry="3" fill="#E3F2FD"/>
         </g>
-        <text x="45" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+        <text x="45" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="white" text-rendering="geometricPrecision">
           Flexible Data Model
         </text>
-        <text x="45" y="44" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2">
+        <text x="45" y="44" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E3F2FD" text-rendering="geometricPrecision">
           Parquet + PostgreSQL
         </text>
       </g>
 
       <!-- Feature 5: Climate Retrieval -->
       <g id="feature-climate" transform="translate(390, 480)">
-        <rect width="200" height="65" rx="6" fill="white" opacity="0.15"/>
-        <rect x="5" y="5" width="190" height="55" rx="4" fill="white" opacity="0.1"/>
+        <rect width="200" height="65" rx="6" fill="rgba(255, 255, 255, 0.25)"/>
         <!-- Cloud Icon -->
         <g transform="translate(20, 32)">
-          <ellipse cx="-3" cy="0" rx="5" ry="4" fill="#95D5B2"/>
-          <ellipse cx="3" cy="0" rx="6" ry="5" fill="#95D5B2"/>
-          <rect x="-8" y="0" width="16" height="4" fill="#95D5B2"/>
+          <ellipse cx="-3" cy="0" rx="5" ry="4" fill="#B3E5FC"/>
+          <ellipse cx="3" cy="0" rx="6" ry="5" fill="#B3E5FC"/>
+          <rect x="-8" y="0" width="16" height="4" fill="#B3E5FC"/>
         </g>
-        <text x="45" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+        <text x="45" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="white" text-rendering="geometricPrecision">
           Climate Data Retrieval
         </text>
-        <text x="45" y="44" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2">
+        <text x="45" y="44" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E3F2FD" text-rendering="geometricPrecision">
           Automated GEE Integration
         </text>
       </g>
 
       <!-- Feature 6: Federated Analysis -->
       <g id="feature-analysis" transform="translate(610, 480)">
-        <rect width="200" height="65" rx="6" fill="white" opacity="0.15"/>
-        <rect x="5" y="5" width="190" height="55" rx="4" fill="white" opacity="0.1"/>
+        <rect width="200" height="65" rx="6" fill="rgba(255, 255, 255, 0.25)"/>
         <!-- Chart Icon -->
         <g transform="translate(20, 32)">
-          <rect x="-6" y="2" width="3" height="6" fill="#95D5B2"/>
-          <rect x="-1" y="-2" width="3" height="10" fill="#95D5B2"/>
-          <rect x="4" y="-4" width="3" height="12" fill="#95D5B2"/>
+          <rect x="-6" y="2" width="3" height="6" fill="#B3E5FC"/>
+          <rect x="-1" y="-2" width="3" height="10" fill="#B3E5FC"/>
+          <rect x="4" y="-4" width="3" height="12" fill="#B3E5FC"/>
         </g>
-        <text x="45" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white">
+        <text x="45" y="28" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="white" text-rendering="geometricPrecision">
           Federated Analysis
         </text>
-        <text x="45" y="44" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2">
+        <text x="45" y="44" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E3F2FD" text-rendering="geometricPrecision">
           Privacy-Safe Analytics
         </text>
       </g>
@@ -291,63 +282,72 @@
   <!-- RIGHT SECTION: Outputs -->
   <g id="outputs">
     <!-- Section Label -->
-    <text x="1050" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2D6A4F" text-anchor="middle">
+    <text x="1050" y="170" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32" text-anchor="middle" text-rendering="geometricPrecision">
       Outputs
     </text>
 
     <!-- Harmonized Datasets Card -->
-    <g id="output-datasets" filter="url(#dropShadow)">
-      <rect x="930" y="230" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#52B788" stroke-width="2"/>
+    <g id="output-datasets">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="932" y="232" width="240" height="90" rx="8" fill="#000000" opacity="0.12"/>
+      <!-- Main card -->
+      <rect x="930" y="230" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#388E3C" stroke-width="3" shape-rendering="crispEdges"/>
       <!-- Icon: Dataset -->
       <g transform="translate(970, 275)">
-        <rect x="-12" y="-10" width="24" height="3" fill="#52B788"/>
-        <rect x="-12" y="-5" width="24" height="3" fill="#52B788"/>
-        <rect x="-12" y="0" width="24" height="3" fill="#52B788"/>
-        <rect x="-12" y="5" width="24" height="3" fill="#52B788"/>
+        <rect x="-12" y="-10" width="24" height="3" fill="#388E3C"/>
+        <rect x="-12" y="-5" width="24" height="3" fill="#388E3C"/>
+        <rect x="-12" y="0" width="24" height="3" fill="#388E3C"/>
+        <rect x="-12" y="5" width="24" height="3" fill="#388E3C"/>
       </g>
-      <text x="1010" y="273" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#2D6A4F">
+      <text x="1010" y="273" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#2E7D32" text-rendering="geometricPrecision">
         Harmonized Datasets
       </text>
-      <text x="1010" y="293" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="1010" y="293" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Research-Ready Format
       </text>
     </g>
 
     <!-- Climate-Health Insights Card -->
-    <g id="output-insights" filter="url(#dropShadow)">
-      <rect x="930" y="340" width="240" height="110" rx="8" fill="#F8F9FA" stroke="#2E86AB" stroke-width="2"/>
+    <g id="output-insights">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="932" y="342" width="240" height="110" rx="8" fill="#000000" opacity="0.12"/>
+      <!-- Main card -->
+      <rect x="930" y="340" width="240" height="110" rx="8" fill="#F8F9FA" stroke="#1976D2" stroke-width="3" shape-rendering="crispEdges"/>
       <!-- Icon: Lightbulb -->
       <g transform="translate(970, 390)">
         <circle cx="0" cy="-5" r="8" fill="#F77F00"/>
         <rect x="-3" y="3" width="6" height="4" fill="#F77F00"/>
         <rect x="-4" y="7" width="8" height="2" fill="#495057"/>
       </g>
-      <text x="1010" y="383" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0B4F6C">
+      <text x="1010" y="383" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#0B4F6C" text-rendering="geometricPrecision">
         Climate-Health Insights
       </text>
-      <text x="1010" y="403" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="1010" y="403" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Statistical Analysis
       </text>
-      <text x="1010" y="420" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="1010" y="420" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Exposure Assessments
       </text>
-      <text x="1010" y="437" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="1010" y="437" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Publication Figures
       </text>
     </g>
 
     <!-- Open Science Card -->
-    <g id="output-science" filter="url(#dropShadow)">
-      <rect x="930" y="470" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#F77F00" stroke-width="2"/>
+    <g id="output-science">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="932" y="472" width="240" height="90" rx="8" fill="#000000" opacity="0.12"/>
+      <!-- Main card -->
+      <rect x="930" y="470" width="240" height="90" rx="8" fill="#F8F9FA" stroke="#F77F00" stroke-width="3" shape-rendering="crispEdges"/>
       <!-- Icon: Open Book/Share -->
       <g transform="translate(970, 515)">
         <path d="M -10,-6 L -10,6 L 0,8 L 10,6 L 10,-6 L 0,-8 Z" fill="none" stroke="#F77F00" stroke-width="2"/>
         <line x1="0" y1="-8" x2="0" y2="8" stroke="#F77F00" stroke-width="2"/>
       </g>
-      <text x="1010" y="513" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#F77F00">
+      <text x="1010" y="513" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#F77F00" text-rendering="geometricPrecision">
         Open Science Ready
       </text>
-      <text x="1010" y="533" font-family="Arial, sans-serif" font-size="12" fill="#495057">
+      <text x="1010" y="533" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-rendering="geometricPrecision">
         Reproducible Workflows
       </text>
     </g>
@@ -357,44 +357,52 @@
   <g id="key-badges">
     <!-- Open Source Badge -->
     <g transform="translate(200, 680)">
-      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#2D6A4F" filter="url(#dropShadow)"/>
-      <text x="0" y="-3" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="-78" y="-18" width="160" height="40" rx="20" fill="#000000" opacity="0.12"/>
+      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#2E7D32"/>
+      <text x="0" y="-3" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle" text-rendering="geometricPrecision">
         OPEN SOURCE
       </text>
-      <text x="0" y="12" font-family="Arial, sans-serif" font-size="11" fill="#95D5B2" text-anchor="middle">
+      <text x="0" y="12" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#A5D6A7" text-anchor="middle" text-rendering="geometricPrecision">
         MIT Licensed
       </text>
     </g>
 
     <!-- Privacy Badge -->
     <g transform="translate(450, 680)">
-      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#0B4F6C" filter="url(#dropShadow)"/>
-      <text x="0" y="-3" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="-78" y="-18" width="160" height="40" rx="20" fill="#000000" opacity="0.12"/>
+      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#0B4F6C"/>
+      <text x="0" y="-3" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle" text-rendering="geometricPrecision">
         PRIVACY-FIRST
       </text>
-      <text x="0" y="12" font-family="Arial, sans-serif" font-size="11" fill="#5BA4CF" text-anchor="middle">
+      <text x="0" y="12" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#90CAF9" text-anchor="middle" text-rendering="geometricPrecision">
         HIPAA Compatible
       </text>
     </g>
 
     <!-- Data Coverage Badge -->
     <g transform="translate(700, 680)">
-      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#F77F00" filter="url(#dropShadow)"/>
-      <text x="0" y="-3" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="-78" y="-18" width="160" height="40" rx="20" fill="#000000" opacity="0.12"/>
+      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#F77F00"/>
+      <text x="0" y="-3" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle" text-rendering="geometricPrecision">
         40+ YEARS
       </text>
-      <text x="0" y="12" font-family="Arial, sans-serif" font-size="11" fill="#FFF3E0" text-anchor="middle">
+      <text x="0" y="12" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#FFE0B2" text-anchor="middle" text-rendering="geometricPrecision">
         Climate Data
       </text>
     </g>
 
     <!-- AI Badge -->
     <g transform="translate(950, 680)">
-      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#2E86AB" filter="url(#dropShadow)"/>
-      <text x="0" y="-3" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle">
+      <!-- Shadow (simple offset rect, no blur) -->
+      <rect x="-78" y="-18" width="160" height="40" rx="20" fill="#000000" opacity="0.12"/>
+      <rect x="-80" y="-20" width="160" height="40" rx="20" fill="#1976D2"/>
+      <text x="0" y="-3" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="white" text-anchor="middle" text-rendering="geometricPrecision">
         AI-POWERED
       </text>
-      <text x="0" y="12" font-family="Arial, sans-serif" font-size="11" fill="#D0E8F2" text-anchor="middle">
+      <text x="0" y="12" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#BBDEFB" text-anchor="middle" text-rendering="geometricPrecision">
         Smart Workflows
       </text>
     </g>
@@ -402,7 +410,7 @@
 
   <!-- Footer -->
   <g id="footer">
-    <text x="600" y="750" font-family="Arial, sans-serif" font-size="12" fill="#495057" text-anchor="middle">
+    <text x="600" y="750" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#495057" text-anchor="middle" text-rendering="geometricPrecision">
       Visit: harmonaize.org | GitHub: github.com/harmonaize | Contact: info@harmonaize.org
     </text>
   </g>
